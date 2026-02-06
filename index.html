@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prophet Challenge | Limitless Pre-TGE Trading Competition</title>
-    <meta name="description" content="Compete in the Prophet Challenge on Limitless Exchange. Predict token launches, FDVs, and prices. Top P&L traders share 30,000 OP in prizes across two rounds.">
+    <meta name="description" content="Compete in the Prophet Challenge on Limitless Exchange. Predict token launches, FDVs, and prices. 65,000 OP in trader prizes via Volume Leaderboard and Trade Lottery.">
     <meta property="og:title" content="Prophet Challenge | Limitless Pre-TGE Trading Competition">
-    <meta property="og:description" content="Predict token launches, FDVs, and prices. Top P&L traders share 30,000 OP in prizes.">
+    <meta property="og:description" content="Predict token launches, FDVs, and prices. 65,000 OP in trader prizes via Volume Leaderboard and Trade Lottery.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Prophet Challenge | Limitless Pre-TGE Trading Competition">
-    <meta name="twitter:description" content="Predict token launches, FDVs, and prices. Top P&L traders share 30,000 OP in prizes.">
+    <meta name="twitter:description" content="Predict token launches, FDVs, and prices. 65,000 OP in trader prizes via Volume Leaderboard and Trade Lottery.">
     <link rel="icon" type="image/svg+xml" href="https://limitless.exchange/assets/images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -638,6 +638,40 @@
             color: var(--gray);
         }
 
+        .tier-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+
+        .tier-table tr {
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .tier-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .tier-table td {
+            padding: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .tier-rank {
+            font-weight: 600;
+            color: var(--gray-light);
+        }
+
+        .tier-rank.gold { color: var(--gold); }
+        .tier-rank.silver { color: var(--silver); }
+        .tier-rank.bronze { color: var(--bronze); }
+
+        .tier-prize {
+            text-align: right;
+            color: var(--lime);
+            font-weight: 700;
+        }
+
         /* ========== PROJECTS ========== */
         .projects {
             padding: 100px 0;
@@ -1054,7 +1088,7 @@
             .stat { padding: 16px; }
             .stat-value { font-size: 2.4rem; }
 
-            .steps { grid-template-columns: 1fr; gap: 16px; }
+            .steps { grid-template-columns: 1fr !important; gap: 16px; }
 
             .rules-grid { grid-template-columns: 1fr; }
             .prize-visual { order: -1; }
@@ -1155,7 +1189,6 @@
             <nav class="nav-links">
                 <a href="#how-it-works">How It Works</a>
                 <a href="#rules">Rules</a>
-                <a href="#projects">Projects</a>
                 <a href="#faq">FAQ</a>
                 <a href="https://limitless.exchange/markets/cat/pre-tge?rv=WBN6MVZONU" class="nav-btn" rel="noopener noreferrer">Start Trading</a>
             </nav>
@@ -1171,7 +1204,6 @@
     <div class="mobile-menu" id="mobileMenu">
         <a href="#how-it-works">How It Works</a>
         <a href="#rules">Rules</a>
-        <a href="#projects">Projects</a>
         <a href="#faq">FAQ</a>
         <a href="https://limitless.exchange/markets/cat/pre-tge?rv=WBN6MVZONU" class="nav-btn" rel="noopener noreferrer">Start Trading</a>
     </div>
@@ -1179,10 +1211,10 @@
     <!-- HERO -->
     <section class="hero">
         <div class="container">
-            <div class="hero-badge">Trading Competition &mdash; February 2026</div>
+            <div class="hero-badge">Trading Competition &mdash; Coming Soon</div>
             <h1>Prophet <span class="gradient-text">Challenge</span></h1>
             <p class="hero-subtitle">
-                Let's find out who the real crypto insiders are. Predict token launches, FDVs, and prices. Top P&L wins.
+                Let's find out who the real crypto insiders are. Predict token launches, FDVs, and prices. Top volume wins.
             </p>
             <div class="hero-cta">
                 <a href="https://limitless.exchange/markets/cat/pre-tge?rv=WBN6MVZONU" class="btn-primary" rel="noopener noreferrer">Start Predicting</a>
@@ -1196,31 +1228,31 @@
         <div class="container">
             <div class="timeline-track reveal">
                 <div class="timeline-item">
-                    <div class="timeline-dot active">R1</div>
+                    <div class="timeline-dot active">1</div>
                     <div>
                         <div class="timeline-label">Round 1 Start</div>
-                        <div class="timeline-date">Feb 3, 2026</div>
+                        <div class="timeline-date">Coming Soon</div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot">R1</div>
+                    <div class="timeline-dot">2</div>
+                    <div>
+                        <div class="timeline-label">Weekly Lottery Draws</div>
+                        <div class="timeline-date">1,000 OP each</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">3</div>
                     <div>
                         <div class="timeline-label">Round 1 End</div>
-                        <div class="timeline-date">Mar 16, 2026</div>
+                        <div class="timeline-date">TBD</div>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-dot">R2</div>
+                    <div class="timeline-dot">&#127942;</div>
                     <div>
-                        <div class="timeline-label">Round 2 Start</div>
-                        <div class="timeline-date">Mar 17, 2026</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">R2</div>
-                    <div>
-                        <div class="timeline-label">Round 2 End</div>
-                        <div class="timeline-date">Apr 27, 2026</div>
+                        <div class="timeline-label">Grand Jackpot</div>
+                        <div class="timeline-date">5,000 OP</div>
                     </div>
                 </div>
             </div>
@@ -1231,16 +1263,16 @@
     <section class="stats">
         <div class="container" style="display: contents;">
             <div class="stat reveal delay-1">
-                <div class="stat-value"><span class="counter" data-target="30000">0</span></div>
-                <div class="stat-label">OP Prize Pool</div>
+                <div class="stat-value"><span class="counter" data-target="65000">0</span></div>
+                <div class="stat-label">OP Trader Prizes</div>
             </div>
             <div class="stat reveal delay-2">
-                <div class="stat-value"><span class="counter" data-target="12">0</span></div>
-                <div class="stat-label">Weeks Duration</div>
+                <div class="stat-value"><span class="counter" data-target="55000">0</span></div>
+                <div class="stat-label">OP Volume Leaderboard</div>
             </div>
             <div class="stat reveal delay-3">
-                <div class="stat-value"><span class="counter" data-target="2">0</span></div>
-                <div class="stat-label">Competition Rounds</div>
+                <div class="stat-value"><span class="counter" data-target="10000">0</span></div>
+                <div class="stat-label">OP Trade Lottery</div>
             </div>
         </div>
     </section>
@@ -1248,22 +1280,17 @@
     <!-- HOW IT WORKS -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <h2 class="section-title reveal">How to <span class="accent">Win</span></h2>
-            <div class="steps">
+            <h2 class="section-title reveal">Two Ways to <span class="accent">Win</span></h2>
+            <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
                 <div class="step reveal delay-1">
-                    <div class="step-number">1</div>
-                    <h3>Predict</h3>
-                    <p>Trade on Pre-TGE markets: FDV predictions, launch dates, post-launch prices</p>
+                    <div class="step-number">&#127942;</div>
+                    <h3>Volume Leaderboard</h3>
+                    <p>Trade Pre-TGE markets and climb the leaderboard. Top 10 traders by volume share 55,000 OP in tiered prizes.</p>
                 </div>
                 <div class="step reveal delay-2">
-                    <div class="step-number">2</div>
-                    <h3>Trade</h3>
-                    <p>Buy YES or NO positions based on your alpha. Markets resolve when tokens launch.</p>
-                </div>
-                <div class="step reveal delay-3">
-                    <div class="step-number">3</div>
-                    <h3>Profit</h3>
-                    <p>Top P&L traders share the 15,000 OP prize pool each round.</p>
+                    <div class="step-number">&#127922;</div>
+                    <h3>Trade Lottery</h3>
+                    <p>Every $50+ trade earns a lottery ticket. Weekly 1,000 OP draws plus a 5,000 OP grand finale jackpot.</p>
                 </div>
             </div>
         </div>
@@ -1279,109 +1306,67 @@
                         <li>
                             <span class="check">&#10003;</span>
                             <div>
-                                <strong>Highest P&L Wins</strong>
-                                <span class="detail">Your profit from Pre-TGE trading determines your rank</span>
+                                <strong>Highest Volume Wins</strong>
+                                <span class="detail">Your trading volume on Pre-TGE markets determines your leaderboard rank</span>
                             </div>
                         </li>
                         <li>
                             <span class="check">&#10003;</span>
                             <div>
                                 <strong>Pre-TGE Markets Only</strong>
-                                <span class="detail">FDV predictions, launch dates, and post-TGE prices</span>
+                                <span class="detail">FDV predictions, launch dates, and more</span>
                             </div>
                         </li>
                         <li>
                             <span class="check">&#10003;</span>
                             <div>
-                                <strong>Two 6-Week Rounds</strong>
-                                <span class="detail">15,000 OP per round, 30,000 OP total</span>
+                                <strong>$50 = 1 Lottery Ticket</strong>
+                                <span class="detail">Every $50+ trade earns an entry into weekly draws and the grand jackpot</span>
                             </div>
                         </li>
                         <li>
                             <span class="check">&#10003;</span>
                             <div>
-                                <strong>Pro-Rata Distribution</strong>
-                                <span class="detail">Rewards distributed proportionally by P&L</span>
+                                <strong>Tiered Prize Distribution</strong>
+                                <span class="detail">Top 10 volume traders win from 16,000 OP (1st) to 2,400 OP (10th)</span>
                             </div>
                         </li>
                     </ul>
+                    <p style="margin-top: 20px; font-size: 0.85rem; color: var(--gray);">
+                        <a href="#" style="color: var(--lime);">Market Maker Rewards (55,000 OP)</a> available for liquidity providers.
+                    </p>
                 </div>
                 <div class="prize-visual reveal-right">
-                    <div class="prize-card">
-                        <div class="prize-card-header">
-                            <span class="prize-card-title">Round 1</span>
-                            <span class="prize-card-amount">15,000 OP</span>
-                        </div>
-                        <div class="prize-card-bar">
-                            <div class="prize-card-bar-fill" style="width: 50%;"></div>
-                        </div>
-                        <div class="prize-card-detail">Feb 3 &ndash; Mar 16, 2026 &middot; 6 weeks</div>
-                    </div>
-                    <div class="prize-card">
-                        <div class="prize-card-header">
-                            <span class="prize-card-title">Round 2</span>
-                            <span class="prize-card-amount">15,000 OP</span>
-                        </div>
-                        <div class="prize-card-bar">
-                            <div class="prize-card-bar-fill" style="width: 50%;"></div>
-                        </div>
-                        <div class="prize-card-detail">Mar 17 &ndash; Apr 27, 2026 &middot; 6 weeks</div>
-                    </div>
                     <div class="prize-card" style="border-color: rgba(212, 245, 52, 0.15);">
                         <div class="prize-card-header">
-                            <span class="prize-card-title">Total Prize Pool</span>
-                            <span class="prize-card-amount">30,000 OP</span>
+                            <span class="prize-card-title">Volume Leaderboard</span>
+                            <span class="prize-card-amount">55,000 OP</span>
                         </div>
-                        <div class="prize-card-bar">
-                            <div class="prize-card-bar-fill" style="width: 100%;"></div>
-                        </div>
-                        <div class="prize-card-detail">Pro-rata distribution based on P&L rankings</div>
+                        <table class="tier-table">
+                            <tr><td class="tier-rank gold">1st</td><td class="tier-prize">16,000 OP</td></tr>
+                            <tr><td class="tier-rank silver">2nd</td><td class="tier-prize">10,000 OP</td></tr>
+                            <tr><td class="tier-rank bronze">3rd</td><td class="tier-prize">7,000 OP</td></tr>
+                            <tr><td class="tier-rank">4th</td><td class="tier-prize">5,000 OP</td></tr>
+                            <tr><td class="tier-rank">5th</td><td class="tier-prize">4,000 OP</td></tr>
+                            <tr><td class="tier-rank">6th&ndash;10th</td><td class="tier-prize">2,400&ndash;3,200 OP</td></tr>
+                        </table>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title reveal">Upcoming Launches to <span class="accent">Predict</span></h2>
-            <div class="projects-grid">
-                <div class="project-card reveal delay-1">
-                    <span class="project-icon">&#128737;</span>
-                    <div class="project-name">Warden</div>
-                    <div class="project-category">Security</div>
-                    <div class="project-tge">TGE: <span>Feb 2026</span></div>
-                </div>
-                <div class="project-card reveal delay-2">
-                    <span class="project-icon">&#128640;</span>
-                    <div class="project-name">Space</div>
-                    <div class="project-category">Infrastructure</div>
-                    <div class="project-tge">TGE: <span>Feb 2026</span></div>
-                </div>
-                <div class="project-card reveal delay-3">
-                    <span class="project-icon">&#128176;</span>
-                    <div class="project-name">Billions</div>
-                    <div class="project-category">DeFi</div>
-                    <div class="project-tge">TGE: <span>Feb 2026</span></div>
-                </div>
-                <div class="project-card reveal delay-4">
-                    <span class="project-icon">&#9878;</span>
-                    <div class="project-name">Rya</div>
-                    <div class="project-category">L2 / Chain</div>
-                    <div class="project-tge">TGE: <span>Feb-Mar 2026</span></div>
-                </div>
-                <div class="project-card reveal delay-5">
-                    <span class="project-icon">&#128272;</span>
-                    <div class="project-name">Idos</div>
-                    <div class="project-category">Identity</div>
-                    <div class="project-tge">TGE: <span>Feb-Mar 2026</span></div>
-                </div>
-                <div class="project-card reveal delay-5">
-                    <span class="project-icon">&#43;</span>
-                    <div class="project-name">+ More</div>
-                    <div class="project-category">&nbsp;</div>
-                    <div class="project-tge">New markets weekly</div>
+                    <div class="prize-card">
+                        <div class="prize-card-header">
+                            <span class="prize-card-title">Trade Lottery</span>
+                            <span class="prize-card-amount">10,000 OP</span>
+                        </div>
+                        <div class="prize-card-detail" style="margin-top: 0;">
+                            <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                                <span>Weekly Draws</span>
+                                <span style="color: var(--lime); font-weight: 600;">5 x 1,000 OP</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+                                <span>Grand Finale Jackpot</span>
+                                <span style="color: var(--lime); font-weight: 600;">5,000 OP</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1398,7 +1383,7 @@
                         <span class="faq-icon"></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Go to Limitless Exchange and trade on any Pre-TGE market. Your P&L from these markets is automatically tracked. No registration required beyond having a wallet connected.</p>
+                        <p>Go to Limitless Exchange and trade on any Pre-TGE market. Your volume is automatically tracked for the leaderboard, and every $50+ trade earns lottery tickets. No registration required beyond connecting your wallet.</p>
                     </div>
                 </div>
                 <div class="faq-item reveal delay-2">
@@ -1407,25 +1392,25 @@
                         <span class="faq-icon"></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Only Pre-TGE markets are eligible: FDV predictions, token launch date predictions, and post-launch price predictions. Regular prediction markets are not included.</p>
+                        <p>Only Pre-TGE markets are eligible: FDV predictions, token launch dates, and more. Regular prediction markets are not included.</p>
                     </div>
                 </div>
                 <div class="faq-item reveal delay-3">
                     <button class="faq-question" aria-expanded="false">
-                        How are prizes distributed?
+                        How does the Volume Leaderboard work?
                         <span class="faq-icon"></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Prizes are distributed pro-rata based on your P&L ranking. The higher your profit, the larger your share of the 15,000 OP pool each round. Only traders with positive P&L are eligible.</p>
+                        <p>Your total trading volume on Pre-TGE markets determines your rank. The top 10 traders share 55,000 OP in tiered prizes: 1st place wins 16,000 OP, 2nd wins 10,000 OP, down to 10th place at 2,400 OP.</p>
                     </div>
                 </div>
                 <div class="faq-item reveal delay-4">
                     <button class="faq-question" aria-expanded="false">
-                        When does the competition start and end?
+                        How does the Trade Lottery work?
                         <span class="faq-icon"></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Round 1 runs from February 3 to March 16, 2026. Round 2 runs from March 17 to April 27, 2026. Each round has its own separate 15,000 OP prize pool.</p>
+                        <p>Every trade of $50 or more earns one lottery ticket. Weekly draws award 1,000 OP each, and a grand finale jackpot of 5,000 OP is drawn at the end of Round 1. More trades = more chances to win.</p>
                     </div>
                 </div>
             </div>
@@ -1436,7 +1421,7 @@
     <section class="cta">
         <div class="container">
             <h2 class="reveal">Ready to prove your alpha?</h2>
-            <p class="reveal delay-1">Join the Prophet Challenge and compete for 30,000 OP</p>
+            <p class="reveal delay-1">Join the Prophet Challenge and compete for 65,000 OP in trader prizes</p>
             <a href="https://limitless.exchange/markets/cat/pre-tge?rv=WBN6MVZONU" class="btn-cta reveal delay-2" rel="noopener noreferrer">Start Trading Now</a>
         </div>
     </section>
