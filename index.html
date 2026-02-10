@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Prophet | Limitless Pre-TGE Trading Competition</title>
-    <meta name="description" content="Compete in Alpha Prophet on Limitless Exchange. Predict token launches, FDVs, and prices. 65,000 OP in trader prizes via Volume Leaderboard and Trade Lottery.">
+    <meta name="description" content="Compete in Alpha Prophet on Limitless Exchange. Predict token launches, FDVs, and prices. 120,000 OP in prizes — Volume Rewards, Trade Lottery, and Market Maker Rewards.">
     <meta property="og:title" content="Alpha Prophet | Limitless Pre-TGE Trading Competition">
-    <meta property="og:description" content="Predict token launches, FDVs, and prices. 65,000 OP in trader prizes via Volume Leaderboard and Trade Lottery.">
+    <meta property="og:description" content="Predict token launches, FDVs, and prices. 120,000 OP in prizes — Volume Rewards, Trade Lottery, and Market Maker Rewards.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Alpha Prophet | Limitless Pre-TGE Trading Competition">
-    <meta name="twitter:description" content="Predict token launches, FDVs, and prices. 65,000 OP in trader prizes via Volume Leaderboard and Trade Lottery.">
+    <meta name="twitter:description" content="Predict token launches, FDVs, and prices. 120,000 OP in prizes — Volume Rewards, Trade Lottery, and Market Maker Rewards.">
     <link rel="icon" type="image/svg+xml" href="https://limitless.exchange/assets/images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -354,91 +354,20 @@
             box-shadow: 0 0 20px rgba(212, 245, 52, 0.1);
         }
 
-        /* ========== TIMELINE ========== */
-        .timeline {
-            padding: 60px 0;
-            border-top: 1px solid rgba(255,255,255,0.06);
-        }
-
-        .timeline-track {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .timeline-track::before {
-            content: '';
-            position: absolute;
-            top: 20px;
-            left: 40px;
-            right: 40px;
-            height: 2px;
-            background: linear-gradient(90deg, var(--lime-glow-strong), var(--lime), var(--lime-glow-strong));
-        }
-
-        .timeline-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .timeline-dot {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: var(--dark-card);
-            border: 2px solid var(--lime);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--lime);
-            box-shadow: 0 0 16px rgba(212, 245, 52, 0.2);
-        }
-
-        .timeline-dot.active {
-            background: var(--lime);
-            color: var(--black);
-        }
-
-        .timeline-label {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: var(--white);
-            text-align: center;
-            white-space: nowrap;
-        }
-
-        .timeline-date {
-            font-size: 0.75rem;
-            color: var(--gray);
-            text-align: center;
-        }
-
         /* ========== STATS ========== */
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+        .stats-section {
             padding: 60px 0;
             border-top: 1px solid rgba(255,255,255,0.06);
             border-bottom: 1px solid rgba(255,255,255,0.06);
         }
 
-        .stat {
+        .stat-hero {
             text-align: center;
-            padding: 24px;
+            margin-bottom: 32px;
         }
 
-        .stat-value {
-            font-size: 3rem;
+        .stat-hero .stat-value {
+            font-size: 3.5rem;
             font-weight: 900;
             color: var(--lime);
             letter-spacing: -0.02em;
@@ -446,15 +375,51 @@
             line-height: 1.1;
         }
 
-        .stat-suffix {
-            font-size: 1.5rem;
+        .stat-hero .stat-suffix {
+            font-size: 1.8rem;
             font-weight: 700;
         }
 
-        .stat-label {
+        .stat-hero .stat-label {
             color: var(--gray);
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin-top: 8px;
+            font-weight: 500;
+        }
+
+        .stats-breakdown {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .stat-sub {
+            text-align: center;
+            padding: 20px 16px;
+            background: var(--dark-card);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+
+        .stat-sub-value {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.2;
+        }
+
+        .stat-sub-value span {
+            color: var(--lime);
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .stat-sub-label {
+            color: var(--gray);
+            font-size: 0.8rem;
+            margin-top: 6px;
             font-weight: 500;
         }
 
@@ -909,7 +874,7 @@
         }
 
         .faq-item.open .faq-answer {
-            max-height: 200px;
+            max-height: 300px;
         }
 
         .faq-answer p {
@@ -1084,9 +1049,9 @@
             .hero h1 { font-size: 2.5rem; }
             .hero-subtitle { font-size: 1.05rem; }
 
-            .stats { grid-template-columns: 1fr; gap: 16px; padding: 40px 0; }
-            .stat { padding: 16px; }
-            .stat-value { font-size: 2.4rem; }
+            .stats-section { padding: 40px 0; }
+            .stat-hero .stat-value { font-size: 2.4rem; }
+            .stats-breakdown { grid-template-columns: 1fr; gap: 12px; }
 
             .steps { grid-template-columns: 1fr !important; gap: 16px; }
 
@@ -1100,31 +1065,6 @@
             .leaderboard-table .volume-col,
             .leaderboard-table th:last-child {
                 display: none;
-            }
-
-            .timeline-track {
-                flex-direction: column;
-                gap: 24px;
-                align-items: flex-start;
-                padding-left: 40px;
-            }
-
-            .timeline-track::before {
-                width: 2px;
-                height: calc(100% - 40px);
-                top: 20px;
-                left: 59px;
-                right: auto;
-            }
-
-            .timeline-item {
-                flex-direction: row;
-                gap: 16px;
-            }
-
-            .timeline-label,
-            .timeline-date {
-                text-align: left;
             }
 
             .cta h2 { font-size: 2rem; }
@@ -1164,7 +1104,7 @@
                 gap: 16px;
             }
 
-            .stat-value { font-size: 2rem; }
+            .stat-hero .stat-value { font-size: 2rem; }
 
             .cta h2 { font-size: 1.75rem; }
 
@@ -1223,56 +1163,26 @@
         </div>
     </section>
 
-    <!-- TIMELINE -->
-    <section class="timeline">
-        <div class="container">
-            <div class="timeline-track reveal">
-                <div class="timeline-item">
-                    <div class="timeline-dot active">1</div>
-                    <div>
-                        <div class="timeline-label">Round 1 Start</div>
-                        <div class="timeline-date">February 10</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">2</div>
-                    <div>
-                        <div class="timeline-label">Weekly Lottery Draws</div>
-                        <div class="timeline-date">1,000 OP each</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">3</div>
-                    <div>
-                        <div class="timeline-label">Round 1 End</div>
-                        <div class="timeline-date">TBD</div>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot">&#127942;</div>
-                    <div>
-                        <div class="timeline-label">Grand Jackpot</div>
-                        <div class="timeline-date">5,000 OP</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- STATS -->
-    <section class="stats">
-        <div class="container" style="display: contents;">
-            <div class="stat reveal delay-1">
-                <div class="stat-value"><span class="counter" data-target="65000">0</span></div>
-                <div class="stat-label">OP Trader Prizes</div>
+    <section class="stats-section">
+        <div class="container">
+            <div class="stat-hero reveal">
+                <div class="stat-value"><span class="counter" data-target="120000">0</span> <span class="stat-suffix">OP</span></div>
+                <div class="stat-label">Total Prize Pool</div>
             </div>
-            <div class="stat reveal delay-2">
-                <div class="stat-value"><span class="counter" data-target="55000">0</span></div>
-                <div class="stat-label">OP Volume Leaderboard</div>
-            </div>
-            <div class="stat reveal delay-3">
-                <div class="stat-value"><span class="counter" data-target="10000">0</span></div>
-                <div class="stat-label">OP Trade Lottery</div>
+            <div class="stats-breakdown">
+                <div class="stat-sub reveal delay-1">
+                    <div class="stat-sub-value">55,000 <span>OP</span></div>
+                    <div class="stat-sub-label">Volume Rewards</div>
+                </div>
+                <div class="stat-sub reveal delay-2">
+                    <div class="stat-sub-value">10,000 <span>OP</span></div>
+                    <div class="stat-sub-label">Trade Lottery</div>
+                </div>
+                <div class="stat-sub reveal delay-3">
+                    <div class="stat-sub-value">55,000 <span>OP</span></div>
+                    <div class="stat-sub-label">Market Maker Rewards</div>
+                </div>
             </div>
         </div>
     </section>
@@ -1280,17 +1190,22 @@
     <!-- HOW IT WORKS -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <h2 class="section-title reveal">Two Ways to <span class="accent">Win</span></h2>
-            <div class="steps" style="grid-template-columns: repeat(2, 1fr);">
+            <h2 class="section-title reveal">Three Ways to <span class="accent">Earn</span></h2>
+            <div class="steps">
                 <div class="step reveal delay-1">
                     <div class="step-number">&#127942;</div>
-                    <h3>Volume Leaderboard</h3>
-                    <p>Trade Pre-TGE markets and climb the leaderboard. Top 10 traders by volume share 55,000 OP in tiered prizes.</p>
+                    <h3>Volume Rewards</h3>
+                    <p>Trade more, earn more. Your volume on Pre-TGE markets earns a proportional share of the 55,000 OP prize pool. Distributed every 2 weeks.</p>
                 </div>
                 <div class="step reveal delay-2">
                     <div class="step-number">&#127922;</div>
                     <h3>Trade Lottery</h3>
                     <p>Every $50+ trade earns a lottery ticket. Weekly 1,000 OP draws plus a 5,000 OP grand finale jackpot.</p>
+                </div>
+                <div class="step reveal delay-3">
+                    <div class="step-number">&#128176;</div>
+                    <h3>Market Maker Rewards</h3>
+                    <p>Provide liquidity on Pre-TGE markets. Top 20 market makers earn rank-based rewards from a 55,000 OP pool, paid weekly.</p>
                 </div>
             </div>
         </div>
@@ -1306,8 +1221,8 @@
                         <li>
                             <span class="check">&#10003;</span>
                             <div>
-                                <strong>Highest Volume Wins</strong>
-                                <span class="detail">Your trading volume on Pre-TGE markets determines your leaderboard rank</span>
+                                <strong>Proportional Volume Rewards</strong>
+                                <span class="detail">Your Reward = Your Volume / Total Volume x Prize Pool. Distributed every 2 weeks.</span>
                             </div>
                         </li>
                         <li>
@@ -1321,35 +1236,37 @@
                             <span class="check">&#10003;</span>
                             <div>
                                 <strong>$50 = 1 Lottery Ticket</strong>
-                                <span class="detail">Every $50+ trade earns an entry into weekly draws and the grand jackpot</span>
+                                <span class="detail">Every $50+ trade earns an entry into weekly draws and the grand jackpot (cap: 50 per wallet per week)</span>
                             </div>
                         </li>
                         <li>
                             <span class="check">&#10003;</span>
                             <div>
-                                <strong>Tiered Prize Distribution</strong>
-                                <span class="detail">Top 10 volume traders win from 16,000 OP (1st) to 2,400 OP (10th)</span>
+                                <strong>Eligibility</strong>
+                                <span class="detail">Trade 3+ different projects with $100+ total volume</span>
                             </div>
                         </li>
                     </ul>
-                    <p style="margin-top: 20px; font-size: 0.85rem; color: var(--gray);">
-                        <a href="#" style="color: var(--lime);">Market Maker Rewards (55,000 OP)</a> available for liquidity providers.
-                    </p>
                 </div>
                 <div class="prize-visual reveal-right">
                     <div class="prize-card" style="border-color: rgba(212, 245, 52, 0.15);">
                         <div class="prize-card-header">
-                            <span class="prize-card-title">Volume Leaderboard</span>
+                            <span class="prize-card-title">Volume Rewards</span>
                             <span class="prize-card-amount">55,000 OP</span>
                         </div>
-                        <table class="tier-table">
-                            <tr><td class="tier-rank gold">1st</td><td class="tier-prize">16,000 OP</td></tr>
-                            <tr><td class="tier-rank silver">2nd</td><td class="tier-prize">10,000 OP</td></tr>
-                            <tr><td class="tier-rank bronze">3rd</td><td class="tier-prize">7,000 OP</td></tr>
-                            <tr><td class="tier-rank">4th</td><td class="tier-prize">5,000 OP</td></tr>
-                            <tr><td class="tier-rank">5th</td><td class="tier-prize">4,000 OP</td></tr>
-                            <tr><td class="tier-rank">6th&ndash;10th</td><td class="tier-prize">2,400&ndash;3,200 OP</td></tr>
-                        </table>
+                        <div class="prize-card-detail" style="margin-top: 0;">
+                            <div style="padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); text-align: center;">
+                                <span style="color: var(--lime); font-weight: 700; font-size: 1rem;">Your Volume / Total Volume x Pool</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+                                <span>Distribution</span>
+                                <span style="color: var(--lime); font-weight: 600;">Every 2 weeks</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 8px 0;">
+                                <span>Per period</span>
+                                <span style="color: var(--lime); font-weight: 600;">~18,333 OP</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="prize-card">
                         <div class="prize-card-header">
@@ -1366,6 +1283,20 @@
                                 <span style="color: var(--lime); font-weight: 600;">5,000 OP</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="prize-card">
+                        <div class="prize-card-header">
+                            <span class="prize-card-title">Market Maker Rewards</span>
+                            <span class="prize-card-amount">55,000 OP</span>
+                        </div>
+                        <table class="tier-table">
+                            <tr><td class="tier-rank gold">1st</td><td class="tier-prize">2,000 OP/week</td></tr>
+                            <tr><td class="tier-rank silver">2nd</td><td class="tier-prize">1,400 OP/week</td></tr>
+                            <tr><td class="tier-rank bronze">3rd</td><td class="tier-prize">1,000 OP/week</td></tr>
+                            <tr><td class="tier-rank">4th&ndash;5th</td><td class="tier-prize">700 OP/week</td></tr>
+                            <tr><td class="tier-rank">6th&ndash;10th</td><td class="tier-prize">380 OP/week</td></tr>
+                            <tr><td class="tier-rank">11th&ndash;20th</td><td class="tier-prize">155 OP/week</td></tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -1397,11 +1328,11 @@
                 </div>
                 <div class="faq-item reveal delay-3">
                     <button class="faq-question" aria-expanded="false">
-                        How does the Volume Leaderboard work?
+                        How do Volume Rewards work?
                         <span class="faq-icon"></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Your total trading volume on Pre-TGE markets determines your rank. The top 10 traders share 55,000 OP in tiered prizes: 1st place wins 16,000 OP, 2nd wins 10,000 OP, down to 10th place at 2,400 OP.</p>
+                        <p>Your reward is proportional to your share of total volume: Your Volume / Total Volume x Prize Pool. The 55,000 OP pool is distributed across 3 bi-weekly periods (~18,333 OP each). Volume resets each period, so you can join anytime. You need 3+ projects traded and $100+ total volume to qualify.</p>
                     </div>
                 </div>
                 <div class="faq-item reveal delay-4">
@@ -1410,7 +1341,16 @@
                         <span class="faq-icon"></span>
                     </button>
                     <div class="faq-answer">
-                        <p>Every trade of $50 or more earns one lottery ticket. Weekly draws award 1,000 OP each, and a grand finale jackpot of 5,000 OP is drawn at the end of Round 1. More trades = more chances to win.</p>
+                        <p>Every trade of $50 or more earns one lottery ticket (max 50 per wallet per week). Weekly draws award 1,000 OP each, and a grand finale jackpot of 5,000 OP is drawn at the end — all accumulated tickets are eligible. The earlier you start, the more tickets you stack.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal delay-5">
+                    <button class="faq-question" aria-expanded="false">
+                        What are Market Maker Rewards?
+                        <span class="faq-icon"></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Market Maker Rewards (55,000 OP) are separate from trader prizes and go to the top 20 liquidity providers on Pre-TGE markets. Rankings are rank-based and paid out weekly — 1st place earns 2,000 OP/week, scaling down to 155 OP/week for 11th-20th.</p>
                     </div>
                 </div>
             </div>
@@ -1421,7 +1361,7 @@
     <section class="cta">
         <div class="container">
             <h2 class="reveal">Ready to prove your alpha?</h2>
-            <p class="reveal delay-1">Join Alpha Prophet and compete for 65,000 OP in trader prizes</p>
+            <p class="reveal delay-1">Join Alpha Prophet and compete for 120,000 OP in total prizes</p>
             <a href="https://limitless.exchange/markets/cat/pre-tge?rv=WBN6MVZONU" class="btn-cta reveal delay-2" rel="noopener noreferrer">Start Trading Now</a>
         </div>
     </section>
@@ -1525,7 +1465,7 @@
             requestAnimationFrame(update);
         }
 
-        const statsSection = document.querySelector('.stats');
+        const statsSection = document.querySelector('.stats-section');
         const statsObserver = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry) {
                 if (entry.isIntersecting && !countersAnimated) {
